@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>設備管理系統</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h2>樹葉國小設備報修單 <span class="badge badge-secondary">總務處</span></h2>
+            <p>不用擔心，報修後會變得煥然一新！</p>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="writer">填寫人：</label>
+                <input type="text" class="form-control" id="writer" placeholder="請輸入您的姓名">
+
+            </div>
+            <div class="form-group">
+                <label for="phone" ">聯絡電話：</label>
+                <input type="text" class="form-control" id="phone" placeholder="請輸入您的電話">
+            </div>
+            <div class="form-group">
+                <label for="space">位置類型：</label>
+                <select class="form-control" id="space">
+                    <option>-</option>
+                    <option>教室</option>
+                    <option>廁所</option>
+                    <option>陽台</option>
+                    <option>走廊</option>
+                    <option>辦公室</option>
+                    <option>公共空間</option>
+                    <option>其他 (補充至報修描述)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="space">位置樓層：</label>
+                <select class="form-control" id="space">
+                    <option>-</option>
+                    <option>一樓</option>
+                    <option>二樓</option>
+                    <option>三樓</option>
+                    <option>四樓</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="type">報修物品：</label>
+                <input type="text" class="form-control" id="description" placeholder="請輸入設備名稱">
+
+            </div>
+            <div class="form-group">
+                <label for="description">報修描述：</label>
+                <input type="text" class="form-control" id="description" placeholder="請詳細說明設備損壞的情況、位置等... 資訊">
+            </div>
+            <div class="form-group">
+                <p>緊急程度：</p>
+            </div>
+            <p></p>
+            <div class="form-group form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option1">
+                <label class="form-check-label" for="exampleRadios1">
+                    非常緊急
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    普通
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="filecontrol">報修狀況補充：</label>
+                <input type="file" class="form-control-file" id="filecontrol">
+
+            </div>
+
+            <div class="alert alert-info" role="alert">
+                若維修遇到問題，我們將會連絡您，請留意手邊的電話。
+            </div>
+            <div class="form-group"> 
+                <button type="submit" class="btn btn-success" onclick="alert('*** 報修單已送出 ***')">完成</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
